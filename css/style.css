@@ -340,12 +340,26 @@ button {
 }
 
 .step-card ul {
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
 }
 
 .step-card li {
     margin-bottom: 10px;
     color: #ccc;
+    position: relative;
+    padding-left: 28px;
+}
+
+.step-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 16px;
+    font-size: 16px;
 }
 
 /* ELITE COACHING */
