@@ -937,3 +937,18 @@ footer {
         padding: 8px 14px;
     }
 }
+
+
+
+
+.about,
+.program,
+.elite-coaching,
+.results,
+.testimonials,
+.faq,
+.final-cta,
+footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+}
