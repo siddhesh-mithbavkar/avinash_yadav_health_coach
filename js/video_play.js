@@ -1,9 +1,14 @@
 const video = document.getElementById('heroVideo');
+const btn = document.getElementById('videoToggle');
 
-function enableSound() {
-    video.muted = false;
-    video.play();
-    document.removeEventListener('click', enableSound);
-}
+btn.addEventListener('click', function () {
 
-document.addEventListener('click', enableSound);
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = '⏸';
+    } else {
+        video.pause();
+        btn.innerHTML = '▶';
+    }
+
+});

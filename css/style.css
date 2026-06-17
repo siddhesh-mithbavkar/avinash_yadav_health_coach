@@ -223,6 +223,41 @@ button {
     filter: blur(50px);
 }
 
+.video-wrapper {
+    position: relative;
+}
+
+.video-toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    height: 70px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.45);
+    color: #fff;
+
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 5;
+
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.video-wrapper:hover .video-toggle {
+    opacity: 1;
+}
+
+.video-toggle:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
 .phone-frame {
     position: relative;
     width: min(340px, 100%);
